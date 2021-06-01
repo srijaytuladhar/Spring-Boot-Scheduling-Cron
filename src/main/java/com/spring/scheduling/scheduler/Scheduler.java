@@ -11,7 +11,7 @@ public class Scheduler {
 
 
     // the statement will be executed every 1 minute from 3:00 pm to 3:59 pm
-    //  fixedRate and fixedDelay can be used instead of CRON expression
+    //  fixedRate and fixedDelay can be used instead of cron expression
     @Scheduled(cron = "0 * 15 * * ?")
     public void fixedScheduler() {
 
@@ -19,6 +19,6 @@ public class Scheduler {
         Date date = new Date();
         String dateToString = simpleDateFormat.format(date);
 
-        System.out.println("Fixed Rate Scheduler: " + dateToString);
+        System.out.println("Cron Scheduler: " + dateToString);
     }
 }
