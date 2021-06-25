@@ -13,6 +13,7 @@ public class Scheduler {
     // the statement will be executed every 1 minute from 3:00 pm to 3:59 pm
     //  fixedRate and fixedDelay can be used instead of cron expression
     @Scheduled(cron = "0 * 15 * * ?")
+    //@Scheduled(fixedRate = 5000, fixedDelay = 5000)
     public void fixedScheduler() {
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
